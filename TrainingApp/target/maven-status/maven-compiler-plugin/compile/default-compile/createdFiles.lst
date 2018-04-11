@@ -1,0 +1,4 @@
+com\tam\app\Message.class
+com\tam\config\SpringMongoConfig.class
+com\tam\model\Devices.class
+com\tam\app\AppController.class

@@ -1,0 +1,7 @@
+com\tam\app\Message.class
+com\tam\config\AppConfig.class
+com\tam\app\AppController.class
+com\tam\service\AppService.class
+com\tam\service\FrameService.class
+com\tam\model\Device.class
+com\tam\repository\DeviceRepository.class

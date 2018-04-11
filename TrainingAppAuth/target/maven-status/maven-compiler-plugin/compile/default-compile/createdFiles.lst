@@ -1,0 +1,6 @@
+main\AppController.class
+model\Device.class
+service\AppService.class
+main\Message.class
+repository\DeviceRepository.class
+service\FrameService.class
