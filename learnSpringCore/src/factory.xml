@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="staticBean" class="factoryBeanMethod.StaticBeanFactory"
+		factory-method="createContent">
+		<constructor-arg name="content" value="This is static bean factory!" />
+	</bean>
+
+	<bean id="factoryBean" class="factoryBeanMethod.NonStaticBeanFactory"></bean>
+
+	<bean id="nonStaticBean" class="factoryBeanMethod.NonStaticBeanFactory"
+		factory-method="createContent" factory-bean="factoryBean">
+		<constructor-arg name="content"
+			value="This is non static bean factory!" />
+	</bean>
+	
+	<bean id="pc" class="abstractFactoryPattern.PCFactory" lazy-init="true">
+		<constructor-arg name="ram"	value="4 GB" />
+		<constructor-arg name="hdd"	value="500 GB" />
+		<constructor-arg name="cpu"	value="Core i5" />
+	</bean>
+
+</beans>

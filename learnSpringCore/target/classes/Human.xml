@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Definition for human by constructor -->
+	<bean id="humanConstructor" class="com.tam.app.Human">
+		<constructor-arg name="name" value="Tam Nguyen" />
+		<constructor-arg name="age" value="25"></constructor-arg>
+	</bean>
+	
+	<!-- Definition for human by setter -->
+	<bean id="humanSetter" class="com.tam.app.Human">
+		<property name="name" value="Quyen Tran"></property>
+		<property name="age" value="24"></property>
+	</bean>
+	
+	<!-- Definition for human by setter -->
+	<bean id="human1" class="com.tam.app.Human">
+		<property name="name" value="Quyen Tran"></property>
+		<property name="age" value="24"></property>
+		<property name="address" value="Vinh Long"/>
+	</bean>
+	
+	<bean id="human2" class="com.tam.app.Human" init-method="onCreate" destroy-method="onDestroy">
+		<constructor-arg name="name" value="Tam Nguyen" />
+		<constructor-arg name="age" value="25"></constructor-arg>
+		<property name="address" value="Ben Tre"/>
+	</bean>
+	
+</beans>
