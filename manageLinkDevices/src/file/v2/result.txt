@@ -1,0 +1,4 @@
+A : [A-C, A-D]
+B : [B-E, F-B]
+C : [A-C]
+D : [A-D, D-E]

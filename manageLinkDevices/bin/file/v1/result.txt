@@ -1,0 +1,7 @@
+A-C : Linked
+A-B : Unlinked
+A-D : Linked
+C-A : Linked
+D-A : Linked
+E-B : Linked
+E-F : Unlinked
